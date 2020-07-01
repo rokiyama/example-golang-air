@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  app:
+    image: cosmtrek/air
+    ports:
+      - '8080:8080'
+    working_dir: /app
+    volumes:
+      - '.:/app'
